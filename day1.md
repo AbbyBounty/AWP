@@ -1,7 +1,5 @@
-# DAY 1
-```c
-PNR : 200243020003
-```
+
+
 #### 1. Display the title "My First Web Page" and display the message Hello from HTML on the web page. 
 ```html
 <!DOCTYPE html>
