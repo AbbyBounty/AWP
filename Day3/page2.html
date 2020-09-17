@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        *
+        {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .box
+        {
+          
+            -webkit-box-shadow: 0 0 3px 3px #524E20;
+            box-shadow: 0 0 3px 3px #524E20;
+                width: 400px;
+           height: 250px;
+         
+            margin: auto;
+            left: 0px; right: 0px; bottom: 0px; top: 0px;
+            padding: 10px;
+            background-color: rgb(110, 110, 110);
+        }
+
+        .table{
+            border-collapse:collapse;
+            padding: 5px;
+            
+        }
+
+       
+
+        div p {
+            text-align: center;
+        }
+
+       .btn{
+           padding-left: 130px;
+       }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+        <p >Visitor Information</p>
+        <hr/>
+        <form action="#" method="POST">
+            <table border="1" class="table" >
+                <tr>
+                    <td>Email Address:</td>
+                    <td><input type="text" name="email" /></td>
+                </tr>
+                <tr>
+                    <td>Do you use web for:</td>
+                    <td>
+                        <input type="checkbox" name="ch1" value="research" /> Research
+                        <input type="checkbox" name="ch2" value="purchase" /> Purchase 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation:</td>
+                    <td>
+                        <select name="occupation">
+                            <option>(Select One)</option>
+                            <option value="Service">Service</option>
+                            <option value="Business">Business</option>
+                            <option value="Student">Student</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Want us to send you junk email?</td>
+                    <td>
+                        <input  type="radio" name="ans" value="yes" /> Absolutely
+                        <input  type="radio" name="ans" value="no" /> No way, man
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="btn"> <input  type="submit" value="SUBMIT" /> <input   type="reset" value="RESET" /></td>
+                </tr>    
+            </table>
+        </form>
+    </div>
+</body>
+</html>

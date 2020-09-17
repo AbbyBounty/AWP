@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .table
+        {
+           background-color: gray;
+           
+           width: 400px;
+           height: 100px;
+           text-align: center;
+            margin: auto;
+            left: 0px; right: 0px; bottom: 0px; top: 0px;
+            -webkit-box-shadow: 0 0 3px 3px #524E20;
+box-shadow: 0 0 3px 3px #524E20;
+           position: absolute;
+           border: none;
+        }
+
+       table{
+            
+            padding-left: 60px;
+           padding-top: 10px;
+        }
+
+        .btn{
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table">
+    <form action="#" method="POST" >
+        <table>
+            <tr class="tr">
+                <td class="td"> <label for="uid">UID :</label>  </td>
+                <td> <input type="text" name="uid" id="uid"/> </td>
+            </tr>
+            <tr>
+                <td> <label for="pwd">PWD :</label> </td>
+                <td> <input type="password" name="pwd" id="pwd" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="LOGIN" class="btn"/> </td>
+                <td> <input type="reset" value="CLEAR" class="btn" /> </td>
+            </tr>   
+        </table>
+    </form>
+
+    </div>
+</body>
+</html>
