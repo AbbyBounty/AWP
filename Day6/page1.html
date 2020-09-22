@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Array of Integer</title>
+<script>
+    var arr = [];
+    function accept(){
+        for (var i = 0; i < 5; i++)
+            arr[i] = parseInt(prompt("Enter element at index no : " + i));
+    }
+
+    function checkEven() {
+        var bool = arr.every(function (element) {
+            if (element % 2 == 0)
+                return true;
+            else
+                return false;
+        });
+        document.getElementById("result").innerHTML = "All are even numbers : " + bool;
+    }
+
+    function checkOdd() {
+        var bool = arr.every(function (element) {
+            if (element % 2 != 0)
+                return true;
+            else
+                return false;
+        });
+        document.getElementById("result").innerHTML = "All are odd numbers : " + bool;
+    }
+
+    function checkPrime() {
+        var bool = arr.every(function (element) {
+            for(i=2;i<element;i++)
+            {
+                if(element % i == 0)
+                    break;
+            }
+
+            if (i==element)
+                return true;
+            else
+                return false;
+        });
+        document.getElementById("result").innerHTML = "All are prime numbers : " + bool;
+    }
+
+    function filterOddEven() {
+        var even =arr.filter(function (element) {
+            return (element % 2 == 0)
+        });
+        var odd = arr.filter(function (element) {
+            return (element % 2 != 0)
+        });
+        document.getElementById("result").innerHTML = "Even : " + even.toString() + "<br/>Odd : " + odd.toString();
+    }
+
+
+</script>
+</head>
+<body onload="accept()">
+   
+    <button onclick="checkEven()">Check All Even</button>
+    <button onclick="checkOdd()">Check All Odd</button>
+    <button onclick="checkPrime()">Check All Prime</button>
+    <button onclick="filterOddEven()">Display seperated even and odd</button>
+    <p id="result"> </p>
+</body>
+
+</html>
