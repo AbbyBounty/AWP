@@ -1,0 +1,24 @@
+<html>
+<head><title>Digit Sum</title>
+    <script>
+        function getSum(num){
+            var temp,sum=0;rem=0;
+            temp = num;
+            while(temp!=0){
+	            rem =parseInt(temp % 10);
+	            sum = parseInt(sum+rem);
+	            temp = parseInt(temp/10);
+            }
+            alert(num);
+            document.getElementById("result").innerHTML = "Sum of digits of "+num+" is : "+sum;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter number <input type="number" name="num" />
+        <button type="button" onclick="getSum(num.value)">Get Sum</button>
+        <p style="color:blue" id="result"></p>
+    </form>
+</body>
+</html>
