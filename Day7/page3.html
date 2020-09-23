@@ -1,0 +1,38 @@
+<html>
+<head><title>Digital Clock</title>
+<script>
+    function mytime()
+    {
+	    var today = new Date();
+	    var h = today.getHours();
+	    var s = today.getSeconds();
+	    var m = today.getMinutes();
+	
+	    //to add prefix zero 
+	
+	    m = addZero(m);
+	    s=  addZero(s);
+	    h = addZero(h);
+
+        document.getElementById("clock").innerHTML = h+" : "+m+" : "+s;
+        t=setTimeout('mytime()', 500);
+    }
+
+    function addZero(i)
+    {
+	    if(i<10)
+		{
+		    i = "0"+i;
+		}
+	return i;
+    }
+
+</script>
+
+</head>
+<body onload="mytime();">
+    <div id="clock" style="font-size:35px;color:#00aaff;text-shadow:2px 2px 2px blue;
+            border:3px groove blue;background-color:#e6b3ff; width:195px; height:40px">
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>JavaScript String</title>
+<script>
+    function StringOperation(str,str2){
+        
+		var res = "Length of String "+str+" is : "+str.length+"<br/>";
+        res += "Lower case string is : "+str.toLowerCase()+"<br/>";
+        res += "Upper case string is : "+str.toUpperCase()+"<br/>";
+      
+		var x = str.search(/w/i);
+        if(x<0){
+           res+="W not found <br/>";
+        }else{
+           res+="W found at : "+x+"<br/>";
+        }
+
+        res += "char at index 4 is :"+str.charAt(4)+"<br/>";
+        res += "unicode of char at index 4 is : "+str.charCodeAt(4)+"<br/>";
+        res += "concatenated string is "+str.concat(str2)+"<br/>";
+        res += "Splited string is : "+str.split(' ', 3)+"<br/>";
+        document.getElementById("result").innerHTML = res;
+
+    }
+
+</script>
+</head>
+<body>
+    <form>
+        Enter a string : 		<input type="text" name="str1" />  <br/><br>
+        Enter string to concat : <input type="text" name="str2" />  <br/>
+        <button type="button" onclick="StringOperation(str1.value,str2.value);">View Result</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>JavaScript Date</title>
+<script>
+    
+    function StringOperation(dob)
+    {
+        var d = new Date(dob);
+        alert(d)
+        var day = d.getDay();
+        var date = d.getDate();
+        var month = d.getMonth();
+        var year = d.getYear();
+
+        var today = new Date();
+        var age = today.getFullYear() - d.getFullYear();
+
+        if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
+            age--;
+        }
+        //alert(years);
+        
+        //alert(years+" "+months+" "+days);
+        
+        var result = "Birth Day : "+day+"<br/>";
+        result += "Birth Date : "+date+"<br />";
+        result += "Birth Month : "+date+"<br />";
+        result += "Birth Year : "+year+"<br />";
+        result += "Your age is : "+age+"</br>";
+        document.getElementById("result").innerHTML = result;
+
+    }
+
+</script>
+</head>
+<body>
+    <form>
+        Enter a date of birth : <input type="date" name="dob" />
+        <button type="button" onclick="StringOperation(dob.value);">View Result</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
