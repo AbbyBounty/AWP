@@ -105,14 +105,14 @@ $('#box').html(item)
 
 
 
-function fade(){
-    $('#5').fadeIn(1000)
-   
-}
-
-function fade2(){
-    $('#5').fadeOut(1000)
-}
+$(document).ready(function () {
+            $("img").mousedown(function () {
+                $(this).fadeOut(1000);
+            });
+            $("img").mouseup(function () {
+                $(this).fadeIn(1000);
+            });
+        });
 
 
 
