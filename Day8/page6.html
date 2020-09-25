@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Get element by tag name</title>
+
+    <script>
+        function getTabular(){
+            var x = document.getElementsByTagName("p");
+            var str="<table border=1>";
+            for (i = 0; i < x.length; i++) {
+                str += "<tr>";
+                str += "<td>" + x[i].firstChild.nodeValue + "</td>";
+                str += "</tr>";
+            }
+            str += "</table>";
+            document.getElementById("table").innerHTML = str;
+        }
+
+        
+
+
+        function changeColor(){
+            var x = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.color = "blue";
+            }
+        }
+
+
+        function changeTextBackground()
+        {
+            var x = document.querySelectorAll("[type='text']");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "aqua";
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <p>An essay is, generally, a scholarly piece of writing that gives the author's own argument�but the definition is vague, 
+        overlapping with those of an article, a pamphlet, and a short story.
+        </p>
+        <p>Essays can consist of a number of elements, including: literary criticism,
+         political manifestos, learned arguments, observations of daily life, recollections, and reflections
+         of the author. 
+        </p>
+        <p> Almost all modern essays are written in prose, but works in verse have been dubbed essays 
+        (e.g., Alexander Pope's An Essay on Criticism and An Essay on Man). While brevity usually defines an essay, 
+        voluminous works like John Locke's An Essay Concerning Human Understanding and Thomas Malthus's 
+        An Essay on the Principle of Population are counterexamples. 
+        </p>
+        <button onclick="getTabular();">Get Table</button>
+        <div id="table"></div>
+    </div>
+
+    <h1 id="p2">Hello World..................... </h1>
+    <h2>Hello World.....................</h2>
+    <h3>Hello World.....................</h3>
+    <button onclick="changeColor();">Change Heading Color</button>
+
+    <br/><br/><br/>
+    <input type="text" value="text1" class="c"/><br/>
+    <input type="text" value="text1" class="c"/><br/>
+    <input type="text" value="text1" class="c"/><br/>
+    <input type="text" value="text1" class="c"/><br/>
+    <button onclick="changeTextBackground();">Change Text Back Color</button>
+
+
+
+</body>
+
+
+</html>

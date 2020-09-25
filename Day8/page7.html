@@ -1,0 +1,21 @@
+
+<html>
+    <head><title>Text Shadow</title>
+    <script>
+        function show(){
+            var x = document.getElementsByTagName("h1");
+            x[0].style.textShadow = "2px 2px 2px red";
+        }
+    
+        function hide(){
+            var x = document.getElementsByTagName("h1");
+            x[0].style.textShadow = "";
+              
+        }
+    </script>
+    </head>
+    <body>
+        <h1 onmouseover="show();" onmouseout="hide()" >Hello World</h1>
+    </body>
+    
+    </html>
