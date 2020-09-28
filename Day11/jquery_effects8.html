@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+           
+
+            $(".thumbs a").click(function () {
+
+                var largePath = $(this).attr("href");
+                var largeAlt = $(this).attr("title");
+                
+                $("#largeImg").attr({src:largePath , alt:largeAlt})
+
+                $("h2 em").html(" (" + largeAlt + ")");
+                return false;
+            });
+
+        });
+</script>
+
+
+    <style>
+        #largeImg {
+	        border: solid 1px #ccc;
+	       
+	        padding: 5px;
+        }
+        .thumbs img {
+	        border: solid 1px #ccc;
+	        width: 100px;
+	        height: 100px;
+	        padding: 4px;
+        }o
+        .thumbs img:hover {
+	        border-color: #FF9900;
+        }
+    </style>
+</head>
+<body>
+    <h2>Illustrations  <em> </em>  </h2>
+
+    <p><img id="largeImg" src="img2-lg.jpg" alt="Large image" width="550" height="400" /></p>
+
+    <p class="thumbs">
+	    <a href="images/img2-lg.jpg" title="Image 2"><img src="images/img2-thumb.jpg" /></a>
+	    <a href="images/img3-lg.jpg" title="Image 3"><img src="images/img3-thumb.jpg" /></a>
+	    <a href="images/img4-lg.jpg" title="Image 4"><img src="images/img4-thumb.jpg" /></a>
+	    <a href="images/img5-lg.jpg" title="Image 5"><img src="images/img5-thumb.jpg" /></a>
+	    <a href="images/img6-lg.jpg" title="Image 6"><img src="images/img6-thumb.jpg" /></a>
+    </p>
+
+</body>
+</html>
