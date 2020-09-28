@@ -81,19 +81,27 @@
 
     <script>
 
-        // $(document).ready(function(){
+        $(document).ready(function(){
 
-        //     $('button').click(function(){
+            $('button').click(function(){
 
-        //         $(this).next().slideToggle(1000)
+                $(this).next().slideToggle(1000)
+            
 
-        //     })
-        // })
+            })
+
+           
+        
+        })
 
 
         $("button").click(function () {
             $("div").slideToggle(1000);
         });
+
+        function slideUpBox(){
+            $('#box').slideUp();
+        }
     </script>
 </body>
 
