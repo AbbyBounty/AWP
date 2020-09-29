@@ -9,7 +9,6 @@
     
 <?php
 
-header('Content-Type:text/html');
 print("Length os String is : ".strlen($_GET['number']));
 
 print("<br>");
