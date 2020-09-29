@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>AWP DAY 12 | SEP 28</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/AWP-Assignment/style.css">
+	<style>
+		/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+		/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+		body {
+			font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+			font-size: var(--vscode-markdown-font-size, 14px);
+			padding: 0 26px;
+			line-height: var(--vscode-markdown-line-height, 22px);
+			word-wrap: break-word;
+		}
+
+		#code-csp-warning {
+			position: fixed;
+			top: 0;
+			right: 0;
+			color: white;
+			margin: 16px;
+			text-align: center;
+			font-size: 12px;
+			font-family: sans-serif;
+			background-color: #444444;
+			cursor: pointer;
+			padding: 6px;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+		}
+
+		#code-csp-warning:hover {
+			text-decoration: none;
+			background-color: #007acc;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+		}
+
+		body.scrollBeyondLastLine {
+			margin-bottom: calc(100vh - 22px);
+		}
+
+		body.showEditorSelection .code-line {
+			position: relative;
+		}
+
+		body.showEditorSelection .code-active-line:before,
+		body.showEditorSelection .code-line:hover:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -12px;
+			height: 100%;
+		}
+
+		body.showEditorSelection li.code-active-line:before,
+		body.showEditorSelection li.code-line:hover:before {
+			left: -30px;
+		}
+
+		.vscode-light.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(0, 0, 0, 0.15);
+		}
+
+		.vscode-light.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(0, 0, 0, 0.40);
+		}
+
+		.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+			border-left: none;
+		}
+
+		.vscode-dark.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(255, 255, 255, 0.4);
+		}
+
+		.vscode-dark.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(255, 255, 255, 0.60);
+		}
+
+		.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+			border-left: none;
+		}
+
+		.vscode-high-contrast.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(255, 160, 0, 0.7);
+		}
+
+		.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(255, 160, 0, 1);
+		}
+
+		.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+			border-left: none;
+		}
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		a:focus,
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: 1px solid -webkit-focus-ring-color;
+			outline-offset: -1px;
+		}
+
+		hr {
+			border: 0;
+			height: 2px;
+			border-bottom: 2px solid;
+		}
+
+		h1 {
+			padding-bottom: 0.3em;
+			line-height: 1.2;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-weight: normal;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table>thead>tr>th {
+			text-align: left;
+			border-bottom: 1px solid;
+		}
+
+		table>thead>tr>th,
+		table>thead>tr>td,
+		table>tbody>tr>th,
+		table>tbody>tr>td {
+			padding: 5px 10px;
+		}
+
+		table>tbody>tr+tr>td {
+			border-top: 1px solid;
+		}
+
+		blockquote {
+			margin: 0 7px 0 5px;
+			padding: 0 16px 0 10px;
+			border-left-width: 5px;
+			border-left-style: solid;
+		}
+
+		code {
+			font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+			font-size: 1em;
+			line-height: 1.357em;
+		}
+
+		body.wordWrap pre {
+			white-space: pre-wrap;
+		}
+
+		pre:not(.hljs),
+		pre.hljs code>div {
+			padding: 16px;
+			border-radius: 3px;
+			overflow: auto;
+		}
+
+		pre code {
+			color: var(--vscode-editor-foreground);
+			tab-size: 4;
+		}
+
+		/** Theming */
+
+		.vscode-light pre {
+			background-color: rgba(220, 220, 220, 0.4);
+		}
+
+		.vscode-dark pre {
+			background-color: rgba(10, 10, 10, 0.4);
+		}
+
+		.vscode-high-contrast pre {
+			background-color: rgb(0, 0, 0);
+		}
+
+		.vscode-high-contrast h1 {
+			border-color: rgb(0, 0, 0);
+		}
+
+		.vscode-light table>thead>tr>th {
+			border-color: rgba(0, 0, 0, 0.69);
+		}
+
+		.vscode-dark table>thead>tr>th {
+			border-color: rgba(255, 255, 255, 0.69);
+		}
+
+		.vscode-light h1,
+		.vscode-light hr,
+		.vscode-light table>tbody>tr+tr>td {
+			border-color: rgba(0, 0, 0, 0.18);
+		}
+
+		.vscode-dark h1,
+		.vscode-dark hr,
+		.vscode-dark table>tbody>tr+tr>td {
+			border-color: rgba(255, 255, 255, 0.18);
+		}
+	</style>
+
+	<style>
+		/* Tomorrow Theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+		/* Tomorrow Comment */
+		.hljs-comment,
+		.hljs-quote {
+			color: #8e908c;
+		}
+
+		/* Tomorrow Red */
+		.hljs-variable,
+		.hljs-template-variable,
+		.hljs-tag,
+		.hljs-name,
+		.hljs-selector-id,
+		.hljs-selector-class,
+		.hljs-regexp,
+		.hljs-deletion {
+			color: #c82829;
+		}
+
+		/* Tomorrow Orange */
+		.hljs-number,
+		.hljs-built_in,
+		.hljs-builtin-name,
+		.hljs-literal,
+		.hljs-type,
+		.hljs-params,
+		.hljs-meta,
+		.hljs-link {
+			color: #f5871f;
+		}
+
+		/* Tomorrow Yellow */
+		.hljs-attribute {
+			color: #eab700;
+		}
+
+		/* Tomorrow Green */
+		.hljs-string,
+		.hljs-symbol,
+		.hljs-bullet,
+		.hljs-addition {
+			color: #718c00;
+		}
+
+		/* Tomorrow Blue */
+		.hljs-title,
+		.hljs-section {
+			color: #4271ae;
+		}
+
+		/* Tomorrow Purple */
+		.hljs-keyword,
+		.hljs-selector-tag {
+			color: #8959a8;
+		}
+
+		.hljs {
+			display: block;
+			overflow-x: auto;
+			color: #4d4d4c;
+			padding: 0.5em;
+		}
+
+		.hljs-emphasis {
+			font-style: italic;
+		}
+
+		.hljs-strong {
+			font-weight: bold;
+		}
+	</style>
+
+	<style>
+		/*
+ * Markdown PDF CSS
+ */
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+			padding: 0 12px;
+		}
+
+		pre {
+			background-color: #f8f8f8;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			overflow-x: auto;
+			white-space: pre-wrap;
+			overflow-wrap: break-word;
+		}
+
+		pre:not(.hljs) {
+			padding: 23px;
+			line-height: 19px;
+		}
+
+		blockquote {
+			background: rgba(127, 127, 127, 0.1);
+			border-color: rgba(0, 122, 204, 0.5);
+		}
+
+		.emoji {
+			height: 1.4em;
+		}
+
+		code {
+			font-size: 14px;
+			line-height: 19px;
+		}
+
+		/* for inline code */
+		:not(pre):not(.hljs)>code {
+			color: #C9AE75;
+			/* Change the old color so it seems less like an error */
+			font-size: inherit;
+		}
+
+		/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+		.page {
+			page-break-after: always;
+		}
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 1px solid rgba(88, 84, 84, 0.377);
+			display: inline-block;
+			border-radius: 5px;
+
+		}
+
+		.gist {
+			width: 600px;
+			height: 50%;
+			overflow: scroll;
+		}
+
+		.gist-file {
+			width: 600px;
+			height: 500px;
+			overflow: scroll;
+		}
+
+		/* .gist-data{
+	width: 100%;
+	overflow: scroll;
+} */
+
+		/* td{
+	width:200px;
+} */
+
+		.box {
+			display: inline-block;
+		}
+	</style>
+
+
+	<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+
+<body>
+	<script>
+		mermaid.initialize({
+			startOnLoad: true,
+			theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+				? 'dark'
+				: 'default'
+		});
+	</script>
+
+<iframe src="/AWP-Assignment/navbar.html" frameborder="0" class="header element"></iframe>
+
+<h1 id="day-11">DAY 12</h1>
+<pre class="hljs"><code><div>PNR : <span class="hljs-number">200243020003</span>
+</div></code></pre>
+	<h3 id="1-write-a-php-script-to-display-welcome-message-to-the-user-formatted-in-bold">1. Write a php script to
+		display welcome message to the user formatted in bold.</h3>
+
+	<table class="table table-dark">
+
+		<tr>
+
+			<td>
+				<script src="https://gist.github.com/AbbyBounty/e29d5bf82ab727760c1f70a702ba4cfb.js"></script>
+			</td>
+
+			<td>
+
+				<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+					src="page9.html"></iframe>
+
+			</td>
+
+
+		</tr>
+	</table>
+
+
+
+
+
+	<h3 id="2-write-a-php-script-which-declares-variable-storing-number-display-whether-it-is-even-or-odd">2. Write a
+		php script which declares variable storing number, display whether it is even or odd</h3>
+
+
+	<table class="table table-dark">
+
+		<tr>
+
+			<td>
+				<script src="https://gist.github.com/AbbyBounty/9cc870aeab6effa090852cef6ba79942.js"></script>
+			</td>
+
+			<td>
+
+				<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+					src="page2.html"></iframe>
+
+			</td>
+
+
+		</tr>
+	</table>
+
+
+	<h3 id="3-write-a-php-script-which-displays-follwing-pattern">3. Write a php script which displays follwing pattern
+	</h3>
+	<pre class="hljs"><code><div>1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+</div></code></pre>
+
+
+<table class="table table-dark">
+
+	<tr>
+
+		<td>
+
+		 <script src="https://gist.github.com/AbbyBounty/af6ee05857035a0e4d391b5c45ed00ea.js"></script> 
+		</td>
+
+		<td>
+
+			<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+				src="page3.php"></iframe>
+
+		</td>
+
+
+	</tr>
+</table>
+	<h3
+		id="4-write-a-php-script-to-define-a-function-which-calculates-sum-of-digits-of-a-number-and-call-the-function-using-php-script">
+		4. Write a php script to define a function which calculates sum of digits of a number and call the function
+		using php script</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/ac83a5d246f826ccb77aee0e20718cc9.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page4.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+
+	<h3
+		id="1-create-an-array-in-php-to-store-data-as-%22one%22-%22two%22-%22three%22-%22four%22-display-this-information-in-bulleted-list">
+		1. Create an array in php to store data as &quot;One&quot;, &quot;Two&quot;, &quot;Three&quot;,
+		&quot;Four&quot;. Display this information in bulleted list .</h3>
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/00eae51ab94e0528b67ac25ead841c54.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page5.php"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+
+		<h3
+		id="2-create-a-web-page-which-will-accept-number-of-rows-and-number-of-columns-from-user-using-textboxes-based-on-this-input-create-a-table-dynamically-using-php-table-data-would-contain-rowcol">
+		2. Create a Web page which will accept number of rows and number of columns from user using textboxes. Based on
+		this input create a table dynamically using php. Table data would contain row*col.</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/582768de69c37e9c3d1f37237c2748a8.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page6.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+		<h3
+		id="3-maintain-the-data-about-employees-and-their-dept-in-multidimensional-array-display-the-information-in-tabular-format-like">
+		3. Maintain the data about employees and their dept in multidimensional array. Display the information in
+		tabular format like</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/acf1ab2b6a5d20e7de0debd95106a354.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page7.php"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+	<h3
+		id="4-create-a-application-which-stores-information-of-contacts-each-contact-will-include-first-namelast-namecontactnoemailid-in-multidimensional-arraycreate-array-manually-accept-conatct-no-from-the-user-and-display-the-rest-of-the-details-of-that-conatct">
+		4. Create a application which stores information of contacts (each contact will include first name,last
+		name,contactno,emailid) in multidimensional array(create array manually). Accept conatct no from the user and
+		display the rest of the details of that conatct.</h3>
+
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/116a14e0e1e2457d18ef12bec229c484.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page8.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+
+
+	<h3 id="1-accept-the-name-from-the-user-and-display-the-message-welcome-xxxx-username">1. Accept the name from the
+		user and display the message welcome XXXX (username)</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/c5cd39577fd05319eb192c03de982324.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page9.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+	<h3
+		id="2-write-a-program-to-accept-a-number-from-the-user-validate-the-number-using-javascript-and-display-its-factorial-using-php-script">
+		2. Write a program to accept a number from the user, validate the number using javascript and display its
+		factorial using PHP script.</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/4518e9113d32ab7142609979c5d76126.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page10.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+	<h3
+		id="3-write-a-program-to-accept-two-numbers-from-the-user-validate-using-javascript-and-display-m-to-the-power-n-using-php-script">
+		3. Write a program to accept two numbers from the user, validate using javascript and display m to the power n
+		using PHP script.</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/e97bc17f84e966d8307301ade2816b43.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page11.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+	<h3
+		id="4-write-a-program-to-accept-a-string-from-user-and-perform-following-operations-on-input-string-length-of-string">
+		4. Write a program to accept a string from user and perform following operations on input string :Length of
+		string.</h3>
+
+		<table class="table table-dark">
+
+			<tr>
+		
+				<td>
+		
+				 <script src="https://gist.github.com/AbbyBounty/f38950d085b139f3003e08cde505f1f6.js"></script> 
+				</td>
+		
+				<td>
+		
+					<iframe style="height: 502px !important; width: 702px !important;" class="embed-responsive-item"
+						src="page12.html"></iframe>
+		
+				</td>
+		
+		
+			</tr>
+		</table>
+
+</body>
+
+</html>
