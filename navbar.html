@@ -1,135 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/AWP-Assignment/style.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/AWP-Assignment/style.css">
 
-   <style>
-       .body{
-           padding: 0px;
-           margin: 0px;
-           margin-top: 0px;
-       }
 
-       .ul
-       {
-           margin: 0px;
-           margin-top: 0px;
-       }
-      .in
-      {
-          width: 85%;
-          padding-left: 20px;
-          display: inline-block;
-          padding-top: 5px;
-          cursor: pointer;
-       
-          text-align: left;
-          line-height: 25px;
-          border-radius: 10px;
-background: #aaaaaa;
-box-shadow: inset 5px 5px 7px #555555, 
-            inset -5px -5px 7px #ffffff;
-        font-family: 'Courier New', Courier, monospace;
-        
-       
-    
+  <style>
+    .body {
+      padding: 0px;
+      margin: 0px;
+      margin-top: 0px;
     }
 
-   
+    .ul {
+      margin: 0px;
+      margin-top: 0px;
+    }
 
-      in:hover{
-          cursor: pointer;
-      }
+    .in {
+      width: 85%;
+      padding-left: 20px;
+      display: inline-block;
+      padding-top: 5px;
+      cursor: pointer;
 
-      .input{
-          background-color: black;
-      }
-
-      .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
- 
+      text-align: left;
+      line-height: 25px;
+      border-radius: 10px;
+      background: #aaaaaa;
+      box-shadow: inset 5px 5px 7px #555555,
+        inset -5px -5px 7px #ffffff;
+      font-family: 'Courier New', Courier, monospace;
 
 
 
-div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  height: 92px;
-  
-}
+    }
 
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  width: 10%;
-  text-align: center;
-}
 
-div.scrollmenu a:hover {
-  background-color: #777;
-  border-radius: 5px;
-  padding: 14px;
-background: #222222;
-box-shadow: inset 7px 7px 10px #171717, 
-            inset -7px -7px 10px #2d2d2d;
-            width: 10%;
-}
-   </style>
-    <title>Document</title>
+
+    in:hover {
+      cursor: pointer;
+    }
+
+    .input {
+      background-color: black;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+
+
+
+
+
+    div.scrollmenu {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+      height: 92px;
+
+    }
+
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      width: 10%;
+      text-align: center;
+    }
+
+    div.scrollmenu a:hover {
+      background-color: #777;
+      border-radius: 5px;
+      padding: 14px;
+      background: #222222;
+      box-shadow: inset 7px 7px 10px #171717,
+        inset -7px -7px 10px #2d2d2d;
+      width: 10%;
+    }
+  </style>
+  <title>Document</title>
 </head>
+
 <body class="body">
-   
- 
-       
-    <div class="line">
-		<ul class="ul">
-			<li  class="red li"></li>
-			<li  class="yellow li"></li>
-            <li  class="green li"></li>
-            &nbsp;
-            &nbsp;
-            <li class=" in dropdown"  >
-               🔐 https://127.0.0.1:8080/AWP-Assignment
-               
-        </ul>
-        <br>
-     
-	</div>
-       
-    <!-- <div class="dropdown-content">
+
+
+
+  <div class="line">
+    <ul class="ul">
+      <li class="red li"></li>
+      <li class="yellow li"></li>
+      <li class="green li"></li>
+      &nbsp;
+      &nbsp;
+      <li class=" in dropdown">
+        🔐 https://127.0.0.1:8080/AWP-Assignment
+
+    </ul>
+    <br>
+
+  </div>
+
+  <!-- <div class="dropdown-content">
         <a href="/Day1/Sep15.html.html" target="_top">DAY 1</a>
         <a href="/Day2/sep16.html" target="_top">DAY 2</a> 
         <a href="/Day1/Sep15.html.html" target="_top">DAY 1</a>
@@ -140,27 +147,29 @@ box-shadow: inset 7px 7px 10px #171717,
         <a href="/Day2/sep16.html" target="_top">DAY 2</a> 
     </div> -->
 
- 
-           
-    <div class="scrollmenu">
-        <a href="/AWP-Assignment/Day1/Sep15.html" target="_top">DAY 1</a>
-        <a href="/AWP-Assignment/Day2/sep16.html" target="_top">DAY 2</a> 
-        <a href="/AWP-Assignment/Day3/sep17.html" target="_top">DAY 3</a> 
-        <a href="/AWP-Assignment/Day4/sep18.html" target="_top">DAY 4</a>
-        <a href="/AWP-Assignment/Day5/sep19.html" target="_top">DAY 5</a>
-        <a href="/AWP-Assignment/Day6/sep21.html" target="_top">DAY 6</a> 
-        <a href="/AWP-Assignment/Day7/sep22.html" target="_top">DAY 7</a>  
-        <a href="/AWP-Assignment/Day8/sep23.html" target="_top">DAY 8</a>  
-        <a href="/AWP-Assignment/Day9/sep24.html" target="_top">DAY 9</a> 
-        <a href="/AWP-Assignment/Day10/sep25.html" target="_top">DAY 10</a> 
-        <a href="/AWP-Assignment/Day11/sep26.html" target="_top">DAY 11</a> 
-        <a href="/AWP-Assignment/Day12/sep28.html" target="_top">DAY 12</a> 
-       
-   
-      </div>
-      
 
-      <iframe width="560" height="315" src="https://mdbootstrap.com/api/snippets/embed/2548897/fullscreen" frameborder="0"></iframe>
-      
+
+  <div class="scrollmenu ">
+    <a href="/AWP-Assignment/Day1/Sep15.html" target="_top">DAY 1</a>
+    <a href="/AWP-Assignment/Day2/sep16.html" target="_top">DAY 2</a>
+    <a href="/AWP-Assignment/Day3/sep17.html" target="_top">DAY 3</a>
+    <a href="/AWP-Assignment/Day4/sep18.html" target="_top">DAY 4</a>
+    <a href="/AWP-Assignment/Day5/sep19.html" target="_top">DAY 5</a>
+    <a href="/AWP-Assignment/Day6/sep21.html" target="_top">DAY 6</a>
+    <a href="/AWP-Assignment/Day7/sep22.html" target="_top">DAY 7</a>
+    <a href="/AWP-Assignment/Day8/sep23.html" target="_top">DAY 8</a>
+    <a href="/AWP-Assignment/Day9/sep24.html" target="_top">DAY 9</a>
+    <a href="/AWP-Assignment/Day10/sep25.html" target="_top">DAY 10</a>
+    <a href="/AWP-Assignment/Day11/sep26.html" target="_top">DAY 11</a>
+    <a href="/AWP-Assignment/Day12/sep28.html" target="_top">DAY 12</a>
+
+
+  </div>
+
+
+  <iframe width="560" height="315" src="https://mdbootstrap.com/api/snippets/embed/2548897/fullscreen"
+    frameborder="0"></iframe>
+
 </body>
+
 </html>
