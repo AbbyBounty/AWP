@@ -1,0 +1,9 @@
+1. Create a node module which will provide funtionality for utility functions like isPrime(), calFact(), isPerfect(). Use this custom module from node application.
+
+2. Create a node web server running on port no 9000 which will display the response as "Hello from Node JS" after receiving the request from the client
+
+3. Create a node web server which will accept name of the user as a request parameter and display welcome message to the user
+
+4. Create a node web server which will accept file name from the user and send the contents of the file as a response otherwise display the message 'resource not found'
+
+5. Create a node web server which will display visit count stored in a file

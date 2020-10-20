@@ -1,0 +1,25 @@
+<html>
+  <head>
+  
+  </head>
+  
+  <body>
+  <p id="emp"> </p>
+  
+  <script>
+          var str = '{"empid":1001,"ename":"Bakul","salary":12000.00,"mgr":true}';
+		  var emp = JSON.parse(str);
+		  alert(emp.ename);
+		  if(emp.mgr)
+		  {
+		     document.getElementById("emp").innerHTML = "<span style='color:green'>Empid : "+emp.empid+"<br/>Ename : "+emp.ename+"</span>";
+		  }
+		  else
+		  {
+	         document.getElementById("emp").innerHTML = "<span style='color:red'>Empid : "+emp.empid+"<br/>Ename : "+emp.ename+"</span>";
+		  }
+		  
+  </script>
+   
+  </body>
+</html>

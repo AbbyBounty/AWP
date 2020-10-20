@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script>
+	  function getemps()
+	  {
+	    var str = '[{"empid":101,"ename":"Bakul"},{"empid":102,"ename":"Amit"},{"empid":103,"ename":"Rahul"}]';
+		var emps = JSON.parse(str);
+		
+		var str = "<table border=1>";
+		for(i=0;i<emps.length;i++)
+		{
+		   str += "<tr>";
+		   str += "<td>"+emps[i].empid +"</td>";
+		   str += "<td>"+emps[i].ename +"</td>";
+		   
+		   str += "</tr>";
+		   alert(emps[i].empid);
+		}
+		str+="</table>";
+		document.getElementById("emps").innerHTML = str;
+	  }
+	</script>
+  </head>
+  <body onload="getemps()">
+     <div id="emps"></div>
+  </body>
+</html>

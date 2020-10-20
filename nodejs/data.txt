@@ -1,0 +1,4 @@
+  
+  hello from node Application
+  simple text file
+  for understanding fs functionality

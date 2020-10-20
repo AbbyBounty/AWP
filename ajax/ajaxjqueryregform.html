@@ -1,0 +1,33 @@
+<html>
+     <head>
+	   <script src="jquery-3.5.1.min.js"></script>
+	     <script>
+		    $(document).ready(function() {
+			   $("a").click(function(){
+			      url= "checkuid.php?uid="+$("#uid").val();
+				  alert(url);
+				  
+				  $.get(url, function(data,status){
+				     if(status == "success")
+					     {
+						    alert(data);
+							$("#uidcheck").html(data);
+						 }
+				  });
+			   });
+			});
+			
+		 </script>
+	 </head>
+	 
+	 <body>
+	   <form>
+	       enter uid:<input type="text" name="uid"  id="uid" />
+		   <a href="#"> check </a><span id="uidcheck">_____</span><br/>
+           <br/>	
+           <br/>
+           <br/>
+           <input type="submit"  value="submit" />		   
+	   </form>
+	 </body>
+</html>
