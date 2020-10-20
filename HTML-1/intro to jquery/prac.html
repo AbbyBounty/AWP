@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+              
+            $("#list a").click(function(){
+            //alert("hello");
+             $(this).next("ul").slideToggle();
+            });
+            });
+        </script>
+    
+</head>
+<body>
+
+
+    <div id="index">
+        <h2>Center Content area</h2><a href="#">details</a>
+        <p style="display:none" class="active">This is related to CDN which stands for content delivery network//center.</p>
+    </div>
+
+    <div id="list">
+        <a href="#">details</a>
+        <ul class="active">
+            <li>Mango</li>
+            <li>Apple</li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="list">
+        <a href="#">details</a>
+        <ul class="active">
+            <li>Mango</li>
+            <li>Apple</li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="test">
+        <a href="#">details</a>
+        <button style="display:none" class="active">Hit the button.</button>
+    </div>
+
+
+</body>
+</html>

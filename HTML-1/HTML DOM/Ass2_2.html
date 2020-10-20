@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function f1()
+        {
+        boxes=document.querySelectorAll("h2");
+        for(i=0;i<boxes.length;i++)
+        {
+        boxes[i].style.backgroundColor="yellow";
+        }
+        }
+
+        function f2()
+        {
+        boxes=document.querySelectorAll(".c1");
+        for(i=0;i<boxes.length;i++)
+        {
+        boxes[i].style.backgroundColor="pink";
+        }
+        }
+    </script>
+</head>
+<body>
+    <h2 id=" title">QuerySelector</h2>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <button onclick="f1()">Click</button> <br /><br />
+    Enter Text:<input type="text" class="c1" /><br />
+    <button onclick="f2()">Click 1</button> <br /><br />
+
+</body>
+</html>

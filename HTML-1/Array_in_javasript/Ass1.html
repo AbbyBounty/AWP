@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function arr_fun(n)
+        {
+         var arr=[];
+         
+        
+         for(var i=0;i<n;i++)
+         {
+          var val=prompt("enter the number:");
+          arr[i]=parseInt(val);
+         }
+
+
+       
+        var sum= arr.reduce(function(initial_val,val){return initial_val+val;});
+         
+        
+        document.getElementById("func").innerHTML="<br/>sum:"+sum;
+
+        
+        var avg= arr.reduce(function(ival,val){return sum/n;}); 
+        
+        document.getElementById("func").innerHTML+="<br/>Average:"+avg;
+
+         
+        var min= arr.reduce(function(a,b){ return((a<b)?a:b) });
+        
+        document.getElementById("func").innerHTML+="<br/>Minimum:"+min;
+
+        
+        var max= arr.reduce(function(a,b){ return((a>b)?a:b) });
+        
+        document.getElementById("func").innerHTML+="<br/>Maximum:"+max;
+
+        
+        var even= arr.every(function(a){ return(a%2==0) });
+        
+        document.getElementById("func").innerHTML+="<br/>Even:"+even;
+
+        
+        var odd= arr.every(function(a){ return(a%2!=0) });
+        
+        document.getElementById("func").innerHTML+="<br/>Odd:"+odd;
+
+        for(var i=0;i<arr.length;i++)
+         {
+        var prime= arr.every(function(a)
+        { 
+        for(var i=1;i=a/2;i++)
+        {
+          if(a%i==0)
+          return true;
+         else
+           return false;
+        }});
+        }
+        document.getElementById("func").innerHTML+="<br/>Prime:"+prime;
+
+        
+        var filtered=arr.filter(function(val){
+        return val%2==0;
+        });
+        
+        document.getElementById("func").innerHTML+="<br/>Even numbers:"+filtered;
+
+        
+        var filtered1=arr.filter(function(val){
+        return val%2!=0;
+        });
+        
+        document.getElementById("func").innerHTML+="<br/>Odd numbers:"+filtered1;
+
+
+         //alert(arr.toString());
+
+         /*for(var i=0;i<arr.length;i++)
+         {
+          document.getElementById("func").innerHTML+="<br/>"+arr[i];
+         }*/
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        enter the elements in array:<input type="text" name="count"/><br />
+        <input type="button" value="Display" onclick="arr_fun(count.value)"/>
+        <br/>
+        <br/>
+        <br/>
+        <span id="func"> result will be displayed here!!</span>
+        
+    </form>
+</body>
+</html>

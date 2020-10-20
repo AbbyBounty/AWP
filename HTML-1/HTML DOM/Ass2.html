@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function readDiv()
+        {
+          var divnode=document.getElementById("content");
+          var divchild=divnode.childNodes;
+          //alert(divchild.length)
+
+         var str= "<table border=1>";
+
+          for(i=0;i<divchild.length;i++)
+          {
+            //alert(divchild[i].nodeName + " : " +divchild[i].nodeType);
+
+             str += "<tr>"
+              if(divchild[i].nodeType==1)
+             {
+             //  alert(divchild[i].nodeName);
+             str +="<td>" + divchild[i].nodeName + "</td>";
+             //  alert(divchild[i].firstChild.nodeValue);
+             str +="<td>" + divchild[i].firstChild.nodeValue + "</td>";
+             }
+             str+= "</tr>";
+          }
+          str+= "</table>";
+          document.getElementById("table").innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <h1>Learning DOM</h1>
+        <p>Used for generating dynamic content</p>
+        <a href="#">Learn details in tabular form</a>
+        <button onclick="readDiv()">Get child info</button>
+    </div>
+    <span id="table"></span>
+</body>
+</html>

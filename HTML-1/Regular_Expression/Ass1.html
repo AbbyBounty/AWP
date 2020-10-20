@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function validate()
+        {
+         var uid=document.f1.uid.value;
+         if(uid.length==0)
+        {
+         alert("please enter UID");
+        }
+        if(uid.length<5 || uid.length>15)
+        {
+         alert("please enter UID between 5-15 characters");
+        document.f1.uid.value="";
+        document.f1.uid.focus();
+        return;
+        }
+
+
+         var uid=document.f1.uid.pwd;
+         if(uid.pwd==0)
+        {
+         alert("please enter password");
+        }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        UID: <input type="text" name="uid" id="value" /><br />
+        Password:<input type="password" name="pwd" /><br />
+        <input type="button" value="Register" onclick="validate()"/>
+    </form>
+</body>
+</html>

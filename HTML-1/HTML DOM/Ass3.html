@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function shadowtxt()
+        {
+         var divnode=document.getElementById("d1");
+         a=divnode.style;
+         divnode.style.textShadow = "2px 2px 2px blue"; 
+        }
+
+        function prevtxt()
+        {
+         var divnode=document.getElementById("d1");
+         divnode.style=a;
+        }
+    </script>
+</head>
+<body>
+    <div onmouseover="shadowtxt()" onmouseout="prevtxt()" id="d1">Hello World</div>
+</body>
+</html>

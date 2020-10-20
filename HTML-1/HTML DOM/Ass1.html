@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function changeimg()
+        {
+          var imgnode=document.getElementById("myimg");
+          a=imgnode.src;
+          b=imgnode.height;
+          c=imgnode.width;
+          imgnode.src="../JS_builtin_objects/a2.jpg";
+          imgnode.width="300";
+          imgnode.height="300";
+        }
+
+        function origimg()
+        {
+          var imgnode=document.getElementById("myimg");
+          imgnode.src=a;
+          imgnode.width=b;
+          imgnode.height=c;
+        }
+
+        function scrolling()
+        {
+            var imgnode=document.getElementById("myimg1");
+          
+            if(parseInt(imgnode.style.left) > window.innerWidth)
+             {
+              imgnode.style.left= "20px";
+             }
+
+            imgnode.style.left= (parseInt(imgnode.style.left)+20)+"px";
+
+            x=setTimeout(function () { scrolling(); }, 200);
+        }
+
+        function stopScroll()
+        {
+          clearTimeout(x);
+          var imgnode=document.getElementById("myimg1");
+          imgnode.style.left="20px";
+          imgnode.style.top="20px"
+        }
+    </script>
+</head>
+<body>
+    <!--<img src="../JS_builtin_objects/a1.jpg" width="200" height="200" id="myimg"
+         onmouseover="changeimg()" onmouseout="origimg()" />-->
+
+    <br /><br /><br />
+    <img src="../JS_builtin_objects/a3.jpg" width="200" height="200" id="myimg1" style="position:absolute;top:20px;left:20px" onclick="scrolling()" ;
+         onmouseover="stopScroll()" />
+</body>
+</html>

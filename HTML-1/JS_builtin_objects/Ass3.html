@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function getTime()
+        {
+         var ctime=new Date();
+         var hh = ctime.getHours();
+         var mm = ctime.getMinutes();
+         var ss = ctime.getSeconds();
+
+         if(hh<10)
+         hh="0"+hh;
+        if(mm<10)
+         mm="0"+mm;
+        if(ss<10)
+         ss="0"+ss;
+         var str=hh+":"+mm+":"+ss;
+         document.getElementById("time").innerHTML=str;
+         flag=setTimeout(function(){getTime();},1000);
+        }
+    </script>
+</head>
+<body onload="getTime()">
+    <span id="time" style="float:left">Time gets displayed here!!</span>
+    <br />
+    <hr />
+    <!--<button type="button" onclick="stopTime()">Stop Refresh</button>-->
+</body>
+</html>

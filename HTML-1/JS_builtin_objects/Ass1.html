@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function f1(a)
+        {
+          document.getElementById("string1").innerHTML="<br/>Length: "+a.length;
+          document.getElementById("string1").innerHTML+="<br/>Capital: "+a.toUpperCase();
+          document.getElementById("string1").innerHTML+="<br/>Small: "+a.toLowerCase();
+
+          document.getElementById("string1").innerHTML+="<br/>W is at Index(from beginning): "
+          +a.indexOf("w");
+         
+          document.getElementById("string1").innerHTML+="<br/>W is at Index(from end): "
+          +a.lastIndexOf("w");
+
+          document.getElementById("string1").innerHTML+="<br/>Letter at index 4: "
+          +a.charAt(4);
+
+          document.getElementById("string1").innerHTML+="<br/>Ascii value at index 4: "
+          +a.charCodeAt(4);
+
+          
+          document.getElementById("string1").innerHTML+="<br/>Splitting by space: "
+          +a.split('');
+        }
+
+        function f2(a,b)
+        {
+          document.getElementById("string1").innerHTML="Concatnation:"+a.concat(b);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter a string: <input type="text" name="str" />
+        <br />
+        <input type="button" value="Display" onclick="f1(str.value)" />
+        <br/>
+        <br/>
+        For Concatnation:<br/>
+        Enter a string 1: <input type="text" name="str1" /><br />
+        Enter a string 2: <input type="text" name="str2" /><br />
+        <input type="button" value="Concat" onclick="f2(str1.value,str2.value)" />
+    </form>
+
+    <br />
+    <br />
+    <span id="string1">The result will be displayed here...!!</span>
+
+</body>
+</html>

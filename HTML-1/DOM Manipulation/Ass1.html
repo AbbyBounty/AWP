@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+       function myFunction() {
+
+        var img = ["Desktop.jpg","mycomputer.jpg","browser.jpg","folder.jpg","word_document.jpg"];
+        var list=documnet.querySelectorAll("li");
+        for(var i=0;i<list.length;i++)
+        {
+        var x = document.createElement("img");
+        x.setAttribute("src",img[i]);
+        x.setAttribute("height","300");
+        x.setAttribute("width","300");
+        list[i].innerHTML = "";
+        list[i].appendChild(x);
+        }
+
+        
+        }
+    </script>
+</head>
+<body>
+    <ul id="myList"><li>Desktop</li><li>mycomputer</li><li>browser</li></ul>
+
+    <button onclick="myFunction()">Try it</button>
+
+</body>
+</html>

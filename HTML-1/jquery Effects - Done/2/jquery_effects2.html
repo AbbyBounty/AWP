@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").mousedown(function () {
+                $(this).fadeOut(4000);
+            });
+            $("img").mouseup(function () {
+                $(this).fadeIn("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td> <img src="images/a1.jpg" width="200" height="200" /> </td>
+            <td> <img src="images/a2.jpg" width="200" height="200"/> </td>
+            <td> <img src="images/a3.jpg" width="200" height="200"/> </td>
+
+        </tr>
+        <tr>
+            <td> <img src="images/a4.jpg" width="200" height="200"/> </td>
+            <td> <img src="images/sunset.jpg" width="200" height="200"/> </td>
+            <td> <img src="images/mycomputer.jpg" width="200" height="200"/> </td>
+
+        </tr>
+        <tr>
+            <td> <img src="images/folder.jpg" width="200" height="200" /> </td>
+            <td> <img src="images/browser.jpg" width="200" height="200"/> </td>
+            <td> <img src="images/Desktop.jpg" width="200" height="200" /> </td>
+
+        </tr>
+    </table>
+</body>
+</html>

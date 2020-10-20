@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function dispyear(dtstr)
+        {
+          var bdate=new Date(dtstr);
+          var year=bdate.getFullYear();
+          var month=bdate.getMonth();
+          var day=bdate.getDate();
+          document.getElementById("byear").innerHTML="Birth year:"+year;
+          document.getElementById("byear").innerHTML+="<br/>Month:"+month;
+          document.getElementById("byear").innerHTML+="<br/>Date:"+day;
+
+          var date1=new Date();
+          var year1=date1.getFullYear();
+          var age1=year1-year;
+          var month1=date1.getMonth();
+          var age2=month1-month;
+         document.getElementById("byear").innerHTML+="<br/>Age:"+age1+"years"; 
+         document.getElementById("byear").innerHTML+=age2+"months";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter birth date:<input type="date" name="bdate" /><br />
+        <input type="button" onclick="dispyear(bdate.value)" value="display" /><br />
+        <br />
+        <br />
+        <br />
+        <span id="byear">result!!</span>
+    </form>
+</body>
+</html>

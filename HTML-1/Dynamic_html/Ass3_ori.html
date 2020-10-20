@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function disptable(){
+        var n=1;
+        var str = "<table border=1>";
+
+          str += "<tr>";
+          str += "<td>";
+          str += "NUMBER";
+          str += "</td>";
+          str += "<td>";
+          str += "FACTORIAL";
+          str += "</td>";
+
+        for(var i=1;i<=4;i++)
+        {
+           
+           
+           str += "<tr>";
+
+           str += "<td>";
+           str += i;
+           str += "</td>";
+
+           str += "<td>";
+           str += (n*=i);
+           str += "</td>";
+
+           str += "</tr>";
+
+        }
+
+        str += "</table>";
+        alert(str);
+        document.getElementById("table").innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+
+    <form>
+        
+        <input type="button" value="Factorial" onclick="disptable()" />
+    </form>
+    <br />
+    <br />
+    <span id="table">table gets displayed here....</span>
+</body>
+</html>

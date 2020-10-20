@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function disptable(n){
+
+            var str = "<table border=1>";
+            for(var i=1;i<=10;i++)
+            {
+                  str += "<tr>";
+                  str += "<td>";
+                  str+=n+"*"+i+"="+(n*i);
+                  str += "</td>";
+                  str += "</tr>";
+            }
+           str += "</table>";
+          alert(str);
+          document.getElementById("table").innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter the number:<input type="number" name="num" /><br/>
+        <input type="button" value="Display table" onclick="disptable(num.value)"/>
+    </form>
+    <br/>
+    <br/>
+    <span id="table">table gets displayed here....</span>
+</body>
+</html>

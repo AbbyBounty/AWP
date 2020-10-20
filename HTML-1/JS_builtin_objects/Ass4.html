@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        
+        var hh,ss,mm;
+        hh=mm=ss=0;
+
+        function getTime()
+        {
+         ss++;
+         
+         if(ss==60)
+        {
+         mm++;
+         ss=0;
+        }
+
+        if(mm==60)
+        {
+         hh++;
+         mm=0;
+        }
+
+        if(hh<10)
+        hh="0"+parseInt(hh);
+        if(mm<10)
+        mm="0"+parseInt(mm);
+        if(ss<10)
+        ss="0"+parseInt(ss);
+
+        var str=hh+":"+mm+":"+ss;
+        document.getElementById("time").innerHTML=str;
+        flag=setTimeout(function(){getTime();},1000); //setTimeout
+        }
+
+        function stopTime()
+        {
+        clearTimeout(flag);
+        }
+
+        function RTime()
+        {
+          hh=mm=ss=0;
+        }
+
+    </script>
+</head>
+
+
+<body >
+    <span id="time" style="float:left">Time gets displayed here!!</span>
+    <br />
+    <hr />
+    <button type="button" onclick="getTime()">Start</button>
+    <button type="button" onclick="stopTime()">Pause</button>
+    <button type="button" onclick="RTime()">Reset</button>
+</body>
+</html>

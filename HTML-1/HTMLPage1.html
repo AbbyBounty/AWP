@@ -1,0 +1,136 @@
+﻿
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>First web page</title>
+</head>
+<body>
+
+    <!-- this is template text -->
+    dlskdks    <br /> jsdkla
+
+    <b>Bol text</b><br />
+    <i>Italics text</i><br />
+    <u>underline</u><br />
+    <strong>String text</strong><br />
+    <em> emphasize text </em><br />
+    5 <sup>2</sup>=25<br />
+    H<sub>2</sub>O <br />
+    <mark>> marked text</mark><br />
+    <p> this is <span style="color:red">know-it</span>, Cdac acts</p>
+    <del>Wrongg</del><br />
+    <ins>Correct</ins><br />
+    <marquee>Welcome to HTML</marquee><br />
+    <marquee direction="right" behavior="alternate" scrollamount="10" width="50%"> Welcome </marquee><br />
+    <br />
+    <br />
+    <br />
+    <marquee direction="up" behavior="scroll">vertical marquee</marquee><br />
+    <img />
+    <img scr="flower.jpg" width="200" height="200" />
+    <br />
+    <br />
+    <br />
+    <img src="images/desert.jpg" width="300" height="300" /><br />
+    <a href="#"><img src="flower.jpg" /></a><!--image as hyperlink--><br />
+    <img scr="flwer.jpg" width="200" height="200" alt="Image is not getting displayed" /><br />
+    <!--DYNAMIC TAGS-->
+    <!--lists:-unordered,ordered,definition list-->
+
+
+    <ul type="square">
+        CDAC courses
+        <li>PG DAC</li>
+        <li>PG DAC</li>
+        <li>PG DAC</li>
+    </ul>
+    <ol type="a" start="10"><!--A,a,I,i,1--(type)-->
+        CDAC courses
+        <li>PG DAC</li>
+        <li>PG DAC</li>
+        <li>PG DAC</li>
+    </ol>
+    <dl >
+        CDAC courses
+        <dt>PG DAC</dt>
+        <dd>-its a course</dd>
+        <dt>PG DAC</dt>
+        <dt>PG DAC</dt>
+    </dl>
+    <!--tables-->
+
+    <table border="1" cellpadding="20" cellspacing="100">
+        <caption>Table data</caption><<!--center-->
+        <tr>
+            <th>Column 1</th><!--center-->
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td width="100">one</td><!--left..change in width of a cell will change complt table-->
+            <td>two</td>
+        </tr>
+        <tr>
+            <td height="60">three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <br/>
+    <table border="1" style="border-collapse:collapse">
+        <!----<thead style="background-color:pink">-->
+        <!--header is displayed-->
+        <!--</thead>-->
+        <!--<tbody>-->
+            <!--data is displayed-->
+        <!--</tbody>-->
+       <!-- <tfoot>-->
+            <!--foot is displayed-->
+        <!--</tfoot>-->
+        <tr>
+            <th>Dept</th>
+            <th>id</th>
+            <th>Name</th>
+            <th>salary</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Training</td>
+            <td>1</td>
+            <td>akul</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <!----<td>Training</td>-->
+            <td>1</td>
+            <td>amit</td>
+            <td>12000</td>
+        </tr>
+        <tr>
+            <!----<td></td>-->
+            <!----<td></td>-->
+            <td colspan="3">total salary</td>
+            <td>22000</td>
+        </tr>
+
+    </table>
+    <br/>
+    <!--frames-->
+
+    <frameset rows="20%,*" noresize="noresize">
+        <frame src="html.html" Top frame/>
+        <frame src="html2.html">bottom</frame>
+        <frameset cols="40%,60%">
+            <frame src="OOP.html" name="f1" noresize scrolling="auto">left</frame>
+            <frame src="Java.html" frame/>
+        </frameset>
+    </frameset>
+
+    <frameset>
+        <!--uhave to replace body by frameset-->
+        <frame src="header.html" name="f1" />
+        <frameset cols="30%,*" />
+        <frame src="navbar.html" name="f2" />
+        <frame src="contentbar.html" name="f3" />
+    </frameset>
+
+</body>
+</html>

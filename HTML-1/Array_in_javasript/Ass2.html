@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var imgarr=["a1.jpg","a2.jpg","a3.jpg","a4.jpg","sunset.jpg"];
+        var index=0;
+
+        function next()
+        {
+        index++;
+        if(index==imgarr.length)
+        index=0;
+        document.getElementById("myimg").src=imgarr[index];
+        }
+
+        function prev()
+        {
+        index--;
+        if(index==-1)
+        index=imgarr.length-1;
+        document.getElementById("myimg").src=imgarr[index];
+        }
+    </script>
+</head>
+<body>
+    <img src="a1.jpg" width="300" height="300" id="myimg" />
+    <br />
+    <button onclick="next()">Next</button>
+    <button onclick="prev()">Previous</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div style="border:1px solid black;width:415px">
+        <p>
+            Student Registration form
+        </p>
+        <hr style="border:1px solid black" />
+        <form>
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="mail">Email Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" id="mail" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        You use web for:
+                    </td>
+                    <td>
+                        <input type="checkbox" name="web" value="Research" />Research
+                        <input type="checkbox" name="web" value="Purchase" />Purchase
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label name="occ">Occupation:</label>
+                    </td>
+                    <td>
+                        (select one)
+                        <select name="occ">
+                            <option code="a1">Doctor</option>
+                            <option code="a2">CA</option>
+                            <option code="a3">Engineer</option>
+                            <option code="a4">Scientist</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Want us to send you junk mail:
+                    </td>
+                    <td>
+                        <input type="radio" name="mail" value="Abs" />Absolutely
+                        <input type="radio" name="mail" value="no" />No way,man
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">
+                        <input type="submit" value="SUBMIT" />
+
+                    </td>
+                    <td>
+                        <input type="RESET" value="RESET" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>

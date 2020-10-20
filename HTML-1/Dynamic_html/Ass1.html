@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function Calfact(n)
+        {
+        var f=1;
+        while(n>0)
+        {
+           f*=n;
+           n--;
+        }
+        document.getElementById("fact").innerHTML="Factorial:"+f;
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        Enter the number:
+        <input type="number" name="num" />
+        <br />
+        <input type="button" value="Factorial" onclick="Calfact(num.value)" />
+        <br />
+        <br />
+        <br />
+        <span id="fact">Factorial gets dispalyed here...</span>
+    </form>
+</body>
+</html>

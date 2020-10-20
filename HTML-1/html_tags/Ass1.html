@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <a id="OOP">OOP</a>
+    <p>
+        Object-oriented programming – As the name suggests uses objects in programming.
+        Object-oriented programming aims to implement<br /> real-world entities like <mark>
+            inheritance,hiding, polymorphism
+        </mark>, etc in programming.<br /> The main aim of OOP is
+        to <b>bind together</b>
+        the data and the functions that operate on them so that no other part of the code
+        can access this data except that function.
+    </p>
+    <p>
+        The building block of C++ that leads to <i>Object-Oriented programming</i> is a Class.<br />
+        It is a user-defined data type, which holds its own data members and member
+        functions, which can be accessed and used by creating an instance of that class.<br />
+        A class is like a <u>blueprint</u> for an object.
+    </p>
+    <br />
+    <p>
+        For Example: Consider the Class of Cars.<br /> There may be many cars with different names
+        and brand but all of them will share some common properties like all of them will
+        have 4 <strong>wheels, Speed Limit, Mileage range</strong> etc.<br /> So here, Car is the class and wheels,
+        speed limits, mileage are their properties.<br />
+
+        A Class is a user-defined data-type which has data members and member functions.<br />
+        Data members are the data variables and member functions are the functions used to
+        <span style="color:orange">
+            manipulate these variables and together these data members and member
+            functions
+        </span>
+        define the properties and behaviour of the objects in a Class.<br />
+        In the above example of class Car, the data member will be speed limit, mileage etc
+        and member functions can apply brakes, increase speed etc.
+    </p>
+    <p>
+        One of the advantages of C++ over C is Exception Handling. Exceptions are run-time
+        anomalies or abnormal conditions that a program encounters during its execution. There
+        are two types of exceptions: a)Synchronous, b)Asynchronous(Ex:which are beyond the
+        program’s control, Disc failure etc). <br />C++ provides following specialized keywords for
+        this purpose.
+        try: represents a block of code that can throw an exception.
+
+        catch: represents a block of code that is executed when a particular exception is thrown.
+        throw: Used to throw an exception. Also used to list the exceptions that a function throws, but doesn’t handle itself.
+    </p><br />
+    <a href="Ass5.html">Return to main page</a>
+    <br />
+    <br />
+    <a id="exc">Exception Handling</a>
+    <p>
+        Why Exception Handling?<br />
+
+        Following are main advantages of exception handling over traditional error handling.
+
+        1) Separation of Error Handling code from Normal Code: In traditional error handling
+        codes, there are always if else conditions to handle errors. <br />These conditions and the
+        code to handle errors get mixed up with the normal flow. This makes the code less
+        readable and maintainable. With try catch blocks, the code for error handling becomes
+        separate from the normal flow.<br />
+
+        2) Functions/Methods can handle any exceptions they choose: A function can throw many
+        exceptions, but may choose to handle some of them. The other exceptions which are
+        thrown, but not caught can be handled by caller. If the caller chooses not to catch
+        them, then the exceptions are handled by caller of the caller.<br />
+        In C++, a function can specify the exceptions that it throws using the throw keyword.
+        The caller of this function must handle the exception in some way (either by specifying
+        it again or catching it)<br />
+
+        3) Grouping of Error Types: In C++, both basic types and objects can be thrown as
+        exception. <br />We can create a hierarchy of exception objects, group exceptions in
+        namespaces or classes, categorize them according to types.
+    </p>
+    <br />
+    <a href="Ass5.html">Return to main page</a>
+    <br />
+    <br />
+    <a id="name">Namespaces</a>
+    <p>
+        Namespaces allow us to group named entities that otherwise would have global scope
+        into narrower scopes, giving them namespace scope. This allows organizing the elements
+        of programs into different logical scopes referred to by names.<br />
+        Namespace is a feature added in C++ and not present in C.
+        A namespace is a declarative region that provides a scope to the identifiers (names
+        of the types, function, variables etc) inside it.<br />
+        Multiple namespace blocks with the same name are allowed. All declarations within
+        those blocks are declared in the named scope.
+    </p><br />
+    <p>
+        A namespace is a declarative region that provides a scope to the identifiers
+        (the names of types, functions, variables, etc) inside it. Namespaces are used to
+        organize code into logical groups and to prevent name collisions that can occur
+        especially when your code base includes multiple libraries.<br /> All identifiers at
+        namespace scope are visible to one another without qualification. Identifiers
+        outside the namespace can access the members by using the fully qualified name for
+        each identifier, for example std::vector<std::string>
+            vec;, or else by a using
+            Declaration for a single identifier (using std::string), or a using Directive for
+            all the identifiers in the namespace (using namespace std;).<br /> Code in header files
+            should always use the fully qualified namespace name.
+    </p>
+    <a href="Ass5.html">Return to main page</a>
+    <br />
+    <br/>
+    <a id="RTTI">RTTI</a>
+    <p>
+        In C++, RTTI (Run-time type information) is a mechanism that exposes information
+        about an object’s data type at runtime and is available only for the classes which
+        have at least one virtual function.<br /> It allows the type of an object to be determined
+        during program execution.
+    </p>
+    <p>
+        In this section, we will see what is the RTTI (Runtime Type Information) in C++.
+        In C++ the RTTI is a mechanism, that exposes information about an object’s datatype
+        during runtime.<br /> This feature can be available only when the class has at least one
+        virtual function. It allows the type of an object to be determined when the program
+        is executing.
+    </p>
+    <a href="Ass5.html">Return to main page</a>
+</body>
+</html>
